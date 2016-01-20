@@ -14,5 +14,6 @@ app.get('/', function(req, res) {
 });
 
 // START SERVER =======================================================================
-app.listen(port);
-console.log("Listening at localhost:" + port);
+app.listen(port, function() {
+	console.log("Listening at localhost:" + port);
+});
